@@ -9,9 +9,6 @@
     "dist",
     "@types"
   ],
-  "pre-commit": {
-    "run": "build:ui"
-  },
   "scripts": {
     "build:ui": "TARO_BUILD_TYPE=ui taro build --ui",
     "build:weapp": "taro build --type weapp",
@@ -79,7 +76,6 @@
     "nerv-server": "^1.4.3",
     "nerv-test-utils": "^1.4.3",
     "nervjs": "^1.4.3",
-    "pre-commit": "^1.2.2",
     "regenerator-runtime": "^0.12.1",
     "simulant": "^0.2.2",
     "sinon": "^7.1.0",
