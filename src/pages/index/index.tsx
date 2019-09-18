@@ -3,6 +3,11 @@ import { View, Text } from '@tarojs/components'
 import './index.scss'
 
 import Timer from '../../components/timer/timer'
+import WImage from './../../components/wImage/index'
+import Skeleton from './../../components/skeleton/index'
+import Price from './../../components/price/index';
+import NoData from './../../components/noData/index'
+import Modal from './../../components/modal/index'
 
 export default class Index extends Component {
 
@@ -47,6 +52,14 @@ export default class Index extends Component {
       <View className='index'>
         <Text>Hello world!</Text>
         <Timer startTime={startTime} endTime={endTime} onTick={this.tickHandler} onTimeup={this.timeupHandler} />
+        <WImage src={'https://ceshiapi.58wld.com/images/login/sdf.png'}
+          type='store'
+          key='storeIcon'
+        />
+        <Skeleton title avatar animateName='elastic'></Skeleton>
+        <Price size="normal" price="21.09" color='#45aafa'></Price>
+        <NoData />
+        <Modal />
       </View>
     )
   }

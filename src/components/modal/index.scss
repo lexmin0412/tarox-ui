@@ -1,0 +1,37 @@
+
+.ship-type-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+
+	.ship-type-differ-modal-inner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 84vw;
+		border-radius: 24px;
+		box-sizing: border-box;
+		padding: 80px 40px 48px;
+		background-color: #fff;
+
+		.text {
+			text-align: center;
+			font-size: 36px;
+			color: #3F444C;
+		}
+		.button {
+			height: 80px;
+			margin-top: 68px;
+			border-radius: 16px;
+			text-align: center;
+			line-height: 80px;
+			font-size: 32px;
+			color: #222;
+			background: #FFE400;
+		}
+	}
+}
