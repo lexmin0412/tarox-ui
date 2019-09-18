@@ -1,0 +1,39 @@
+.number {
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  font-weight: bold;
+  // color: #EC4C39;
+
+  &.lg {
+    height: 64px;
+    line-height: 64px;
+
+    .bill-icon {
+      font-size: 32px;
+    }
+    .integer-part {
+      font-size: 64px;
+    }
+    .decimal-part {
+      font-size: 48px;
+    }
+  }
+
+  &.sm {
+    height: 32px;
+    line-height: 32px;
+
+    .bill-icon {
+      font-size: 24px;
+    }
+    .integer-part {
+      font-size: 32px;
+    }
+    .decimal-part {
+      font-size: 28px;
+    }
+  }
+
+
+}
