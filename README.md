@@ -1,123 +1,46 @@
-# 基于 Taro 的多端 UI 库示范用例
+# taro-cui
 
-> 通过 Taro 提供的多端 UI 库打包能力，可以打包出一个多端运行的 UI 库，目前已经支持 微信/支付宝/百度小程序以及 H5，RN 端的支持还在调研中
+## 初衷
 
-## 多端 UI 库项目结构
+本着不重复造轮子，但绝不怕造轮子的理念，`taro-cui` 组件库的开发宗旨是：只开发 `taro` 以及 `taro-ui` 组件库没有，或者难以使用的组件，对于 `taro` 和 `taro-ui` 中功能和体验都已经做到上佳的组件，我们不会重复做没有意义的事情，而对于 `taro` 和 `taro-ui` 本来没有，后来做的体验更好的组件，如果没有明确的提升目标或者优化的方向，我们也会停止开发并在相应的组件中予以标识，但会一直提供支持。
 
-多端 UI 库的项目目录结构与普通 Taro 项目基本一致，不同点如下
+## 组件库
 
-#### 增加一个 UI 库入口文件
+|组件|描述|状态|
+|---|---|---|
+|Timer|倒计时组件|stable|
+|WImage|图片组件，弥补了taro Image组件难以处理图片路径错误的问题|
+|Skeleton|骨架屏组件，灵感来源于[https://github.com/lentoo/taro-skeleton](https://github.com/lentoo/taro-skeleton), 目前还有待完善，谨慎使用|develop|
+|Price|价格展示组件|
+|NoData|缺省状态组件，含文字和描述，均可通过传入属性自定义|
+|Modal|弹窗组件|
 
-需要在 `src` 目录下添加 `index.js` 或者 `index.ts` 来作为 UI 库的入口文件，用于输出 UI 组件，如果有多个 UI 组件，可以如下书写
+## 正在路上的组件
 
-```javascript
-export { default as A } from './components/A/A'
-export { default as B } from './components/B/B'
-```
+请查看 [TODO](./TODO.md)
 
-这样的话，这个组件库使用起来，会是如下的方式
+## Contributors
 
-```javascript
-import { A } from 'taro-ui-sample'
+- [cathe-zhang](https://github.com/cathe-zhang)
+- [1415801689xing](https://github.com/1415801689xing)
 
-<A />
-```
+## 更新日志
 
-如果只有 UI 组件，也可以如下书写
+### v0.0.1
 
-```javascript
-import A from './components/A/A'
+#### Features
 
-export default A
-```
+- 新增Modal组件
+- 新增 `NoData` 组件
+- 新增 `Price` 组件
+- 新增 `ProgressBar` 组件
+- 新增 `Skeleton` 组件
+- 新增 `WImage` 组件
 
-这样的话，这个组件库使用起来，会是如下的方式
+#### Updates
 
-```javascript
-import A from 'taro-ui-sample'
+- 优化 `Timer` 组件, 添加样式
 
-<A />
-```
+#### chore
 
-#### 配置文件改造
-
-为了打包出可以在 H5 端使用的组件库，需要在 `config/index.js` 文件中增加一些配置
-
-```javascript
-if (process.env.TARO_BUILD_TYPE === 'ui') {
-  Object.assign(config.h5, {
-    enableSourceMap: false,
-    enableExtract: false,
-    enableDll: false
-  })
-  config.h5.webpackChain = chain => {
-    chain.plugins.delete('htmlWebpackPlugin')
-    chain.plugins.delete('addAssetHtmlWebpackPlugin')
-    chain.merge({
-      output: {
-        path: path.join(process.cwd(), 'dist', 'h5'),
-        filename: 'index.js',
-        libraryTarget: 'umd',
-        library: 'taro-ui-sample'
-      },
-      externals: {
-        nervjs: 'commonjs2 nervjs',
-        classnames: 'commonjs2 classnames',
-        '@tarojs/components': 'commonjs2 @tarojs/components',
-        '@tarojs/taro-h5': 'commonjs2 @tarojs/taro-h5',
-        'weui': 'commonjs2 weui'
-      }
-    })
-  }
-}
-```
-
-以上配置可以根据需要自行修改。
-
-#### package.json 依赖处理
-
-package.json 中 `dependencies` 中只放必要的依赖，并且建议尽量精简，原有 Taro 相关的依赖可以放到 `devDependencies` 中，这样安装 UI 库的时候不需要再重复安装
-
-## 打包命令
-
-在完成以上项目结构改造后，你就可以获得一个 Taro 的多端 UI 库的项目了
-
-这时候你可以通过如下命令来进行打包
-
-```bash
-$ TARO_BUILD_TYPE=ui taro build --ui
-```
-
-打包之后的文件在 `dist` 目录下
-
-里面会包含一个 `index.js` 的入口文件，内容如下，需要注意的是，这个内容是 Taro 自动生成的，不可修改
-
-```javascript
-if (process.env.TARO_ENV === 'h5') {
-  module.exports = require('./h5/index')
-  module.exports.default = module.exports
-} else {
-  module.exports = require('./weapp/index')
-  module.exports.default = module.exports
-}
-```
-
-H5 端以及小程序类（微信/支付宝/百度）的文件分别在 `h5` 和 `weapp` 目录下，通过入口文件就能在不同的端内进行引用
-
-## 项目测试
-
-推荐采用 [jest](https://jestjs.io/) 进行测试，项目中已经包含了完整的测试配置与范例，可以直接使用，有以下值得注意的地方
-
-#### 使用 babel-jest
-
-转换器使用 `babel-jest`，为了配合 babel 7 进行使用，需要安装
-
-```bash
-$ yarn add --dev babel-jest babel-core@^7.0.0-bridge.0 @babel/core
-```
-
-其中 `babel-core@^7.0.0-bridge.0` 一定要安装
-
-#### babel.config.js
-
-由于测试使用了 babel 7，为了避免和 Taro 本身使用的 babel 冲突，测试使用的 babel 配置位于 `babel.config.js` 中
+- 变更项目定位：从单一UI组件变为组件库
