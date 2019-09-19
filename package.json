@@ -8,7 +8,8 @@
   "files": [
     "dist",
     "@types",
-    "src"
+    "src",
+    "config"
   ],
   "scripts": {
     "build:ui": "TARO_BUILD_TYPE=ui taro build --ui",
