@@ -1,6 +1,6 @@
 {
   "name": "taro-cui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "taro-cui, 商城常用UI组件库",
   "main": "dist/index.js",
   "main:h5": "dist/h5/index.js",
