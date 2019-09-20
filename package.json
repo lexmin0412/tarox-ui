@@ -23,7 +23,8 @@
     "dev:h5": "npm run build:h5 -- --watch",
     "dev:rn": "npm run build:rn -- --watch",
     "lint": "eslint ./src --fix",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "template": "node node_modules/taro-template/template.js"
   },
   "lint-staged": {
     "*.{js,ts,tsx,jsx}": [
@@ -80,6 +81,7 @@
     "regenerator-runtime": "^0.12.1",
     "simulant": "^0.2.2",
     "sinon": "^7.1.0",
+    "taro-template": "^0.0.9",
     "typescript": "^3.0.1"
   }
 }

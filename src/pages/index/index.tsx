@@ -8,6 +8,8 @@ import Skeleton from './../../components/skeleton/index'
 import Price from './../../components/price/index';
 import NoData from './../../components/noData/index'
 import Modal from './../../components/modal/index'
+import BlockTitle from './../../components/blockTitle/index'
+import Curtain from './../../components/curtain/curtain'
 
 export default class Index extends Component {
 
@@ -60,6 +62,12 @@ export default class Index extends Component {
         <Price size="normal" price="21.09" color='#45aafa'></Price>
         <NoData />
         <Modal />
+        <BlockTitle title='这是块标题' />
+        <Curtain visible={true} >
+          <View className="curtain-content">
+            这是内容
+          </View>
+        </Curtain>
       </View>
     )
   }
