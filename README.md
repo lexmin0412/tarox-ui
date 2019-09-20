@@ -32,33 +32,19 @@ yarn add taro-cui
 |Price|价格展示组件|
 |NoData|缺省状态组件，含文字和描述，均可通过传入属性自定义|
 |Modal|弹窗组件|
-
-## 正在路上的组件
-
-请查看 [TODO](./TODO.md)
+|BlockTitle|块标题组件|
+|Curtain|幕帘组件|
 
 ## Contributors
 
 - [cathe-zhang](https://github.com/cathe-zhang)
 - [1415801689xing](https://github.com/1415801689xing)
 
+## 开发计划
+
+[点此前往](./TODO.md)
+
 ## 更新日志
 
-### v0.0.1
+[点此前往](./CHANGELOG.md)
 
-#### Features
-
-- 新增Modal组件
-- 新增 `NoData` 组件
-- 新增 `Price` 组件
-- 新增 `ProgressBar` 组件
-- 新增 `Skeleton` 组件
-- 新增 `WImage` 组件
-
-#### Updates
-
-- 优化 `Timer` 组件, 添加样式
-
-#### chore
-
-- 变更项目定位：从单一UI组件变为组件库
