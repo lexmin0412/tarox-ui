@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "main:h5": "dist/h5/index.js",
   "types": "./@types/index.d.ts",
+  "keywords": ["taro", "taro-cui", "taro-components"],
   "files": [
     "dist",
     "src",
