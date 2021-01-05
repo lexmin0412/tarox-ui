@@ -1,0 +1,28 @@
+name: Node CI
+
+# 指定触发action的事件
+on:
+  push:
+    # 指定触发指定事件的分支 仅master触发
+    branches:
+      - dev
+  pull_request: # 待测试
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ strategy.matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ strategy.matrix.node-version }}
+      - name: 发送企业微信推送消息
+        run: |
+          node ./qywxrobot.js key=${{QYWX_ROBOT_KEY}}
