@@ -25,4 +25,4 @@ jobs:
           node-version: ${{ strategy.matrix.node-version }}
       - name: 发送企业微信推送消息
         run: |
-          node ./../../qywxrobot.js key=${{secrets.QYWX_ROBOT_KEY}}
+          node qywxrobot.js key=${{secrets.QYWX_ROBOT_KEY}}
