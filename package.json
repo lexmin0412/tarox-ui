@@ -14,6 +14,7 @@
     ]
   },
   "scripts": {
+    "docs:dev": "npx docsify serve docs",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "build:component": "lerna run --scope taro-x-ui build",
