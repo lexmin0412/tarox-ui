@@ -22,7 +22,7 @@ export default {
     file: resolveFile(pkg.browser),
     format: "umd",
     sourcemap: true,
-    name: "taroColorUi"
+    name: "taroXUI"
   }],
   external: [
     "react",

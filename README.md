@@ -11,4 +11,4 @@
 
 ### 预览
 
-<img src="qrcode.png" alt="TaroColorUI" width="200" height="200"  />
+<img src="qrcode.png" alt="Taro X UI" width="200" height="200"  />
