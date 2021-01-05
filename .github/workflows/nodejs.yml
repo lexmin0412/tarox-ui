@@ -23,6 +23,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ strategy.matrix.node-version }}
+      - name: 执行npm install
+        run: |
+          npm install
+        env:
+          CI: true
       - name: 发送企业微信推送消息
         run: |
           node qywxrobot.js key=${{secrets.QYWX_ROBOT_KEY}}
