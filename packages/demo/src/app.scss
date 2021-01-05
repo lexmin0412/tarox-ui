@@ -1,0 +1,62 @@
+@import "~taro-x-ui/dist/style/components/button.scss";
+
+.list-item {
+  display: flex;
+  align-items: center;
+  height: 98px;
+  line-height: 98px;
+  margin: 0 20px;
+  padding: 0 20px;
+  border-radius: 12px;
+
+  .list-item-name {
+    flex: 1;
+    font-size: 28px;
+    color: #333;
+  }
+}
+
+.padding-sm {
+  padding: 20px;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.icon-prefix-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.icon-next {
+  font-weight: 700;
+  font-size: 24px;
+  color: #999;
+}
+
+page {
+  background-color: #eff0f5;
+  font-size: 28rpx;
+  color: #333;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+.solid,
+.solid-top,
+.solid-right,
+.solid-bottom,
+.solid-left,
+.solids,
+.solids-top,
+.solids-right,
+.solids-bottom,
+.solids-left,
+.dashed,
+.dashed-top,
+.dashed-right,
+.dashed-bottom,
+.dashed-left {
+  position: relative;
+}
