@@ -12,10 +12,12 @@ const request = require( 'request' );
 //resData对象各属性请参考官方文档
 // https://work.weixin.qq.com/help?doc_id=13376
 var resData = {
-  "msgtype": "text",
-  "text": {
-    "content": `taro-xui构建成功
-查看地址：https://github.com/lexmin0412/taro-xui/actions/
+  "msgtype": "markdown",
+  "markdown": {
+    "content": `<font color="warning">**taro-x-ui**</font> 文档部署成功
+> 点此查看：https://taro-xui.lexmin0412.vercel.app
+> 本次构建地址：https://github.com/lexmin0412/taro-xui/actions/
+> 项目地址：https://github.com/lexmin0412/taro-xui
             `,
     "mentioned_mobile_list": [ "@all" ]
   }
