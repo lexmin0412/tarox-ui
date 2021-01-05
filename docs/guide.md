@@ -1,4 +1,4 @@
-# 概述 :id=guide
+# 简介 :id=guide
 
 一个基于 Taro3 + React 的多端组件库。
 
