@@ -1,9 +1,55 @@
 import React from "react";
 import { View, Text } from "@tarojs/components";
-import Taro from "@tarojs/taro";
+import Taro, {
+  useAddToFavorites,
+  useShareAppMessage,
+  useShareTimeline,
+  useDidShow,
+  getCurrentInstance
+} from "@tarojs/taro";
 import "./index.scss";
+import logo from './../../assets/logo.png'
 
-const Index: React.FC = () => {
+const Index: React.FC = (props) => {
+
+  console.log('props', props)
+
+  const router = getCurrentInstance().router
+  if (router) {
+    console.log('页面来源', router.params)
+  }
+
+  useDidShow(()=>{
+    console.log('into useDidShow 开始请求', )
+  })
+
+  // 分享给朋友
+  useShareAppMessage(()=>{
+    return{
+      title: 'Taro X UI',
+      path: '/pages/home/index?source=share',
+      imageUrl: logo
+    }
+  })
+
+  // 分享到朋友圈
+  useShareTimeline(() => {
+    return {
+      title: 'Taro X UI',
+      query: 'source=timeline',
+      imageUrl: logo
+    }
+  })
+
+  // 收藏
+  useAddToFavorites(() => {
+    return {
+      title: 'Taro X UI',
+      query: 'source=favorites',
+      imageUrl: logo
+    }
+  })
+
   const componentsList = [
     {
       name: "按钮",
