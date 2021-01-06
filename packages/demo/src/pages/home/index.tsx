@@ -5,7 +5,7 @@ import Taro, {
   useShareAppMessage,
   useShareTimeline,
   useDidShow,
-  getCurrentInstance
+  useRouter,
 } from "@tarojs/taro";
 import "./index.scss";
 import logo from './../../assets/logo.png'
@@ -13,14 +13,10 @@ import logo from './../../assets/logo.png'
 const Index: React.FC = (props) => {
 
   console.log('props', props)
-
-  const router = getCurrentInstance().router
-  if (router) {
-    console.log('页面来源', router.params)
-  }
+  const router = useRouter()
 
   useDidShow(()=>{
-    console.log('into useDidShow 开始请求', )
+    console.log('into useDidShow, router: ', router)
   })
 
   // 分享给朋友
