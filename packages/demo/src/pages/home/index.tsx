@@ -59,6 +59,10 @@ const Index: React.FC = (props) => {
       name: "模态框",
       path: "/pages/modal/index"
     },
+    {
+      name: "图片",
+      path: "/pages/image/index"
+    },
   ];
 
   return (

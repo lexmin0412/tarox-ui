@@ -1,0 +1,28 @@
+@import '~taro-x-ui/dist/style/components/image.scss';
+
+.test-image {
+  width: 80px;
+  height: 80px;
+}
+
+.custom-bg-white {
+  background-color: white;
+}
+
+.custom-bg-blue {
+  background-color: #45aafa;
+}
+
+.custom-bg-gray {
+  background-color: #eff0f5;
+}
+
+.round {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.custom-size {
+  width: 60px;
+  height: 60px;
+}

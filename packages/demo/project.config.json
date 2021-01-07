@@ -71,6 +71,13 @@
 					"pathName": "pages/modal/index",
 					"query": "",
 					"scene": null
+        },
+        {
+					"id": 0,
+					"name": "pages/image/index",
+					"pathName": "pages/image/index",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
