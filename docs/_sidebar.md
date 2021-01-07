@@ -4,4 +4,6 @@
 
 - 组件
   
-  - [组件](/button.md)
+  - [Button](/button.md)
+  - [Modal](/modal.md)
+  - [Image](/image.md)
