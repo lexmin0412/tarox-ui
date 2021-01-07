@@ -1,10 +1,14 @@
-@import "~taro-x-ui/dist/style/components/button.scss";
+// @import "~taro-x-ui/dist/style/components/button.scss";
+
+.x-item {
+  min-height: 100px;
+  line-height: 100px;
+}
 
 .list-item {
   display: flex;
   align-items: center;
   height: 98px;
-  line-height: 98px;
   margin: 0 20px;
   padding: 0 20px;
   border-radius: 12px;
@@ -16,8 +20,25 @@
   }
 }
 
+.solid-border-b {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.padding-sm-x {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .padding-sm {
   padding: 20px;
+}
+
+.padding-sm-b {
+  padding-bottom: 20px;
+}
+
+.padding-fixed-b {
+  padding-bottom: 120px;
 }
 
 .bg-white {
@@ -43,20 +64,32 @@ page {
   font-family: Helvetica Neue, Helvetica, sans-serif;
 }
 
-.solid,
-.solid-top,
-.solid-right,
-.solid-bottom,
-.solid-left,
-.solids,
-.solids-top,
-.solids-right,
-.solids-bottom,
-.solids-left,
-.dashed,
-.dashed-top,
-.dashed-right,
-.dashed-bottom,
-.dashed-left {
-  position: relative;
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+$mtPrefix: margin-top;
+
+.#{$mtPrefix} {
+  margin-top: 30px;
+
+  &-sm {
+    margin-top: 20px;
+  }
+
+  &-xs {
+    margin-top: 10px;
+  }
 }

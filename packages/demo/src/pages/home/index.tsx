@@ -7,8 +7,12 @@ import Taro, {
   useDidShow,
   useRouter,
 } from "@tarojs/taro";
+import {XButton} from 'taro-x-ui'
+import { handleViewDocs } from './../../utils/viewdocs'
 import "./index.scss";
 import logo from './../../assets/logo.png'
+
+console.log('XButton', XButton)
 
 const Index: React.FC = (props) => {
 
@@ -71,6 +75,20 @@ const Index: React.FC = (props) => {
           </View>
         </View>
       ))}
+
+      <XButton
+        customStyle={{
+          position: 'fixed',
+          left: 0,
+          bottom: 0,
+          width: '100%',
+          height: Taro.pxTransform(90)
+        }}
+        onClick={()=>handleViewDocs('all')}
+      >
+        查看文档
+      </XButton>
+
     </View>
   );
 };

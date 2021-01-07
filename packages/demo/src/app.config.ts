@@ -5,7 +5,7 @@ export default {
   ],
   window: {
     backgroundTextStyle: "light",
-    navigationBarBackgroundColor: "#45aafa",
+    navigationBarBackgroundColor: "#f32525",
     navigationStyle: "default",
     navigationBarTitleText: "Taro X UI",
     navigationBarTextStyle: "white"
