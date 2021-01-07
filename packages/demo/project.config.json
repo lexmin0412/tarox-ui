@@ -51,10 +51,24 @@
 		"miniprogram": {
 			"current": -1,
 			"list": [
-				{
+        {
+					"id": 0,
+					"name": "pages/home/index",
+					"pathName": "pages/home/index",
+					"query": "",
+					"scene": null
+        },
+        {
 					"id": 0,
 					"name": "pages/button/index",
 					"pathName": "pages/button/index",
+					"query": "",
+					"scene": null
+        },
+        {
+					"id": 0,
+					"name": "pages/modal/index",
+					"pathName": "pages/modal/index",
 					"query": "",
 					"scene": null
 				}

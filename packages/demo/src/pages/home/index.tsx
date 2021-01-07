@@ -55,6 +55,10 @@ const Index: React.FC = (props) => {
       name: "按钮",
       path: "/pages/button/index"
     },
+    {
+      name: "模态框",
+      path: "/pages/modal/index"
+    },
   ];
 
   return (
@@ -62,7 +66,7 @@ const Index: React.FC = (props) => {
 
       {componentsList.map((comp) => (
         <View
-          className="list-item bg-white"
+          className="list-item bg-white margin-top-xs"
           key={comp.name}
           onClick={() => Taro.navigateTo({ url: comp.path })}
         >
