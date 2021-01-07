@@ -1,0 +1,11 @@
+@import './../../style/variables/default.scss';
+
+$prefixCls: x-image;
+
+.#{$prefixCls} {
+  image {
+    width: 100%;
+    height: 100%;
+  }
+}
+

@@ -30,9 +30,9 @@ export const XButton = ({ children, openType, loading = false, customStyle = {},
         }
         else {
             return {
-                color: hollow ? '#f32525' : '#fff',
-                backgroundColor: hollow ? '#fff' : '#f32525',
-                border: hollow ? `1px solid #f32525` : 0
+                color: hollow ? '#FF0036' : '#fff',
+                backgroundColor: hollow ? '#fff' : '#FF0036',
+                border: hollow ? `1px solid #FF0036` : 0
             };
         }
     };
