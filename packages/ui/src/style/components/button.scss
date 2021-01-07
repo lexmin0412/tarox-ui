@@ -1,0 +1,66 @@
+@import './../../style/variables/default.scss';
+
+$prefixCls: x-button;
+
+.#{$prefixCls} {
+  position: relative;
+  border: 0;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+
+  &::after {
+    display: none;
+  }
+
+  &:not([class*="x-button-hollow"]) {
+    &:not([class*="bg-"]) {
+      background-color: $theme-color;
+      color: #fff;
+    }
+  }
+
+  &-disabled {
+    opacity: 0.5;
+  }
+
+  &-flex {
+    display: inline-flex;
+    width: auto;
+  }
+
+  &-mini {
+    min-width: 96px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+  }
+
+  &-normal {
+    min-width: 180px;
+    height: 72px;
+    line-height: 72px;
+    font-size: 28px;
+  }
+
+  &-large {
+    min-width: 240px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 28px;
+  }
+
+  &-round {
+    border-radius: 5000px;
+  }
+
+  // 镂空
+  &-hollow {
+    background-color: #fff;
+  }
+}
