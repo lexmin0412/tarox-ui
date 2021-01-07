@@ -1,9 +1,14 @@
 import React from "react";
-import Taro from '@tarojs/taro'
+import Taro, {
+  useAddToFavorites,
+  useShareAppMessage,
+  useShareTimeline,
+} from '@tarojs/taro'
 import {View } from "@tarojs/components";
 import {XButton} from 'taro-x-ui';
 import {handleViewDocs} from './../../utils/viewdocs'
 import './index.scss'
+import logo from './../../assets/logo.png'
 
 const ButtonIndex: React.FC = () => {
 
@@ -12,6 +17,33 @@ const ButtonIndex: React.FC = () => {
       title: '你点击了按钮'
     })
   }
+
+  // 分享给朋友
+  useShareAppMessage(() => {
+    return {
+      title: 'Taro X UI - Button',
+      path: '/pages/home/index?source=share',
+      imageUrl: logo
+    }
+  })
+
+  // 分享到朋友圈
+  useShareTimeline(() => {
+    return {
+      title: 'Taro X UI - Button',
+      query: 'source=timeline',
+      imageUrl: logo
+    }
+  })
+
+  // 收藏
+  useAddToFavorites(() => {
+    return {
+      title: 'Taro X UI - Button',
+      query: 'source=favorites',
+      imageUrl: logo
+    }
+  })
 
   return (
     <View className='padding-fixed-b'>
