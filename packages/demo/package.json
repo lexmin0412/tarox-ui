@@ -1,6 +1,6 @@
 {
 	"name": "taro-x-ui-demo",
-	"version": "1.0.0",
+	"version": "0.0.4",
 	"private": true,
 	"description": "taro3-react-ui-demo",
 	"author": "lexmin0412 zhangle_media@hotmail.com",
@@ -14,6 +14,7 @@
 	},
 	"scripts": {
 		"build:weapp": "taro build --type weapp",
+		"build:weapp-upload": "taro build --type weapp && node tasks/mp-cli/ci.js",
 		"build:swan": "taro build --type swan",
 		"build:alipay": "taro build --type alipay",
 		"build:tt": "taro build --type tt",
@@ -55,6 +56,7 @@
 		"@types/webpack-env": "^1.13.6",
 		"babel-preset-taro": "3.0.22",
 		"eslint-config-taro": "3.0.22",
+		"miniprogram-ci": "^1.0.94",
 		"typescript": "^4.0.2"
 	}
 }
