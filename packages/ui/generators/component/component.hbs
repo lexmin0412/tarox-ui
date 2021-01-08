@@ -1,0 +1,30 @@
+/**
+ * {{FILE_NAME}} {{FILE_DESC}}
+ */
+
+import Taro from '@tarojs/taro'
+import { View } from '@tarojs/components'
+import React from "react";
+import classNames from 'classnames'
+
+import {CommonProps} from "../types/common";
+
+interface IProps extends CommonProps {
+
+}
+
+export const X{{pascalCase FILE_NAME}}: React.FC<IProps> = ({
+  prefixCls = 'x-{{kebabCase FILE_NAME}}'
+}) => {
+
+  // 组装类名
+  const propsClassNames = classNames(prefixCls, {
+
+  })
+
+  return (
+    <View></View>
+  );
+};
+
+export default X{{pascalCase FILE_NAME}};

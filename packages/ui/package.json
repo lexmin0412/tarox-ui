@@ -38,7 +38,8 @@
     "build:lib": "tsc --project ./tsconfig.build.json --declaration --declarationDir types",
     "build:rollup": "rollup --config ./build/rollup.config.js",
     "lint:es-fix": "eslint --ext .ts --ext .tsx --ext .js --ext .jsx ./src --fix",
-    "lint:style-fix": "stylelint \"src/**/*.scss\" --syntax scss --fix"
+    "lint:style-fix": "stylelint \"src/**/*.scss\" --syntax scss --fix",
+    "new": "plop --plopfile generators/index.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.0.0",
@@ -49,6 +50,7 @@
     "@tarojs/runtime": "3.0.22",
     "@tarojs/taro": "3.0.22",
     "@types/classnames": "^2.2.10",
+    "plop": "^2.7.4",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
     "rollup": "^2.26.11",
