@@ -1,5 +1,5 @@
 const ci = require('miniprogram-ci')
-const pkgInfo = require('./../../package.json')
+const pkgInfo = require('../../package.json')
 
 ;(async () => {
   try {
