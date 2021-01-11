@@ -23,19 +23,19 @@ module.exports = {
 			{
 				type: 'add', // 操作类型，这里是添加文件
 				path:
-					'../src/pages/{{kebabCase FILE_NAME}}/index.tsx', // 添加的文件的路径
+					'../src/pages/{{camelCase FILE_NAME}}/index.tsx', // 添加的文件的路径
 				templateFile: './component/component.hbs', // 模板文件的路径
       },
       {
 				type: 'add', // 操作类型，这里是添加文件
 				path:
-					'../src/pages/{{kebabCase FILE_NAME}}/index.config.ts', // 添加的文件的路径
+					'../src/pages/{{camelCase FILE_NAME}}/index.config.ts', // 添加的文件的路径
 				templateFile: './component/config.hbs', // 模板文件的路径
 			},
 			{
 				type: 'add', // 操作类型，这里是添加文件
 				path:
-					'../src/pages/{{kebabCase FILE_NAME}}/index.scss', // 添加的文件的路径
+					'../src/pages/{{camelCase FILE_NAME}}/index.scss', // 添加的文件的路径
 				templateFile: './component/scss.hbs', // 模板文件的路径
 			},
 		])
