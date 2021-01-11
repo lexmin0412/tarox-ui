@@ -2,7 +2,7 @@ import Taro from '@tarojs/taro';
 import React from "react";
 import { Button } from "@tarojs/components";
 import classNames from 'classnames';
-export const XButton = ({ children, openType, loading = false, customStyle = {}, onClick, inline = false, size = 'normal', disabled = false, round = false, hollow = false, customColor }) => {
+export const XButton = ({ children, className, openType, loading = false, customStyle = {}, onClick, inline = false, size = 'normal', disabled = false, round = false, hollow = false, customColor }) => {
     const prefixCls = 'x-button';
     // 剩余属性
     const restProps = Taro.getEnv() === Taro.ENV_TYPE.WEB ? {} : {
@@ -10,7 +10,7 @@ export const XButton = ({ children, openType, loading = false, customStyle = {},
         loading
     };
     // 组装类名
-    const propsClassNames = classNames(prefixCls, {
+    const propsClassNames = classNames(prefixCls, className, {
         [`${prefixCls}-${size}`]: size,
         [`${prefixCls}-flex`]: inline,
         [`${prefixCls}-round`]: round,

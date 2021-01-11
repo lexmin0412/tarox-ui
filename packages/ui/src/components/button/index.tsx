@@ -63,6 +63,7 @@ interface IProps
 
 export const XButton: React.FC<IProps> = ({
   children,
+  className,
   openType,
   loading = false,
   customStyle = {},
@@ -83,7 +84,7 @@ export const XButton: React.FC<IProps> = ({
   }
 
   // 组装类名
-  const propsClassNames = classNames(prefixCls, {
+  const propsClassNames = classNames(prefixCls, className, {
     [`${prefixCls}-${size}`]: size,
     [`${prefixCls}-flex`]: inline,
     [`${prefixCls}-round`]: round,

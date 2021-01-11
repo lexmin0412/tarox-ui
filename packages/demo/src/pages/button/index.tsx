@@ -109,6 +109,10 @@ const ButtonIndex: React.FC = () => {
         <XButton inline hollow customColor='#45aafa'>#45aafa - 镂空</XButton>
         <XButton inline hollow customColor='grey'>grey - 镂空</XButton>
       </View>
+      <View className="bg-white x-item padding-sm-x flex justify-between align-center flex-wrap">
+        <XButton inline customColor='#ff4a4a'>#ff4a4a - 非镂空</XButton>
+        <XButton inline customColor='#45aafa'>#45aafa - 非镂空</XButton>
+      </View>
 
       <View className="margin-top bg-white x-item padding-sm-x solid-border-b">
         <View className="x-item-text">块状</View>
@@ -117,7 +121,7 @@ const ButtonIndex: React.FC = () => {
         <View className="margin-top-xs">
           <XButton hollow>块状 - 镂空</XButton>
         </View>
-        <View className="margin-top-xs">
+        <View className="margin-top-sm">
           <XButton>块状 - 不镂空</XButton>
         </View>
       </View>
