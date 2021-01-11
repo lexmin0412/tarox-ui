@@ -14,7 +14,7 @@
 	},
 	"scripts": {
 		"build:weapp": "taro build --type weapp",
-		"build:weapp-upload": "taro build --type weapp && node tasks/mp-cli/upload.js",
+		"build:weapp-upload": "taro build --type weapp && node tasks/mp-ci/upload.js",
 		"build:swan": "taro build --type swan",
 		"build:alipay": "taro build --type alipay",
 		"build:tt": "taro build --type tt",
