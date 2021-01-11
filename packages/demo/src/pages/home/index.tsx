@@ -63,6 +63,10 @@ const Index: React.FC = (props) => {
       name: "图片",
       path: "/pages/image/index"
     },
+    {
+      name: "复选框",
+      path: "/pages/checkbox/index"
+    },
   ];
 
   return (

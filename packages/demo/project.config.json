@@ -78,6 +78,13 @@
 					"pathName": "pages/image/index",
 					"query": "",
 					"scene": null
+        },
+        {
+					"id": 0,
+					"name": "pages/checkbox/index",
+					"pathName": "pages/checkbox/index",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

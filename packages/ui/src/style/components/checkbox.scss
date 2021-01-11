@@ -1,0 +1,19 @@
+@import './../../style/variables/default.scss';
+
+$prefixCls: x-checkbox;
+
+.#{$prefixCls} {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  color: $border-color;
+
+  &-checked:not(&-disabled) {
+    color: $theme-color;
+  }
+
+  &-disabled {
+    background-color: #808086;
+    opacity: 0.5;
+  }
+}
