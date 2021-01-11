@@ -23,13 +23,13 @@ module.exports = {
 			{
 				type: 'add', // 操作类型，这里是添加文件
 				path:
-					'../src/components/{{kebabCase FILE_NAME}}/index.tsx', // 添加的文件的路径
+					'../src/components/{{camelCase FILE_NAME}}/index.tsx', // 添加的文件的路径
 				templateFile: './component/component.hbs', // 模板文件的路径
 			},
 			{
 				type: 'add', // 操作类型，这里是添加文件
 				path:
-					'../src/style/components/{{kebabCase FILE_NAME}}.scss', // 添加的文件的路径
+					'../src/style/components/{{camelCase FILE_NAME}}.scss', // 添加的文件的路径
 				templateFile: './component/scss.hbs', // 模板文件的路径
 			},
 		])
