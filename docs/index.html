@@ -13,45 +13,65 @@
 
 <body>
   <div id="app">loading...</div>
+  <!-- 在github上编辑插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
   <script>
-      window.$docsify = {
-        basePath: window.location.host === 'lexmin0412.github.io' ? '/taro-xui/' : '/',
-        name: 'Taro X UI',  // 文档标题，会显示在侧边栏顶部
-        nameLink: '/',      // 点击文档标题后的跳转地址
-        repo: 'lexmin0412/taro-xui',  // 有repo属性则右上角会展示github图标，点击可进入
-        loadSidebar: true, // 加载侧边栏
-        externalLinkTarget: '_blank',   // 外部链接的打开方式，默认_blank
-        cornerExternalLinkTarget: '_blank',  // 右上角链接的打开方式。默认为 _blank
-        routerMode: 'hash',    // 路由方式 默认hash
-        coverpage: true, // 展示封面
-        notFoundPage: true,  // 在找不到指定页面时加载_404.md
-        // onlyCover: true,   // 只在访问主页时加载封面
-        auto2top: true, // 切换页面后是否自动跳转到页面顶部
-        search: {       // 搜索插件配置
-          paths: 'auto',
-          placeholder: '🔍 搜索',
-          noData: '😞 没有结果!'
-        },
-        count:{  // 字数统计插件配置
-          countable:true,
-          fontsize:'0.9em',
-          color:'rgb(90,90,90)',
-          language:'chinese'
-        },
-        pagination: {  // 分页插件配置
-          previousText: '上一章节',
-          nextText: '下一章节',
-          crossChapter: true,
-        },
-      }
+    window.$docsify = {
+      basePath: window.location.host === 'lexmin0412.github.io' ? '/taro-xui/' : '/',
+      name: 'Taro X UI', // 文档标题，会显示在侧边栏顶部
+      nameLink: '/', // 点击文档标题后的跳转地址
+      repo: 'lexmin0412/taro-xui', // 有repo属性则右上角会展示github图标，点击可进入
+      loadSidebar: true, // 加载侧边栏
+      externalLinkTarget: '_blank', // 外部链接的打开方式，默认_blank
+      cornerExternalLinkTarget: '_blank', // 右上角链接的打开方式。默认为 _blank
+      routerMode: 'hash', // 路由方式 默认hash
+      coverpage: true, // 展示封面
+      notFoundPage: true, // 在找不到指定页面时加载_404.md
+      // onlyCover: true,   // 只在访问主页时加载封面
+      auto2top: true, // 切换页面后是否自动跳转到页面顶部
+      search: { // 搜索插件配置
+        paths: 'auto',
+        placeholder: '🔍 搜索',
+        noData: '😞 没有结果!'
+      },
+      count: { // 字数统计插件配置
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      },
+      pagination: { // 分页插件配置
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+      },
+      plugins: [
+        EditOnGithubPlugin.create(
+          'https://github.com/lexmin0412/taro-xui/blob/master/docs/',
+          null,
+          function ( file ) {
+            if ( file.indexOf( 'en' ) === -1 ) {
+              return '在 GitHub 上编辑'
+            } else {
+              return 'Edit on Github'
+            }
+          }
+        )
+      ]
+    }
   </script>
 </body>
 
 <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>  <!--全局搜索插件-->
-<script src="//unpkg.com/docsify-count/dist/countable.js"></script>   <!--字数统计插件-->
-<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>    <!--代码段复制插件-->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>   <!--图片缩放插件-->>
-<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>  <!--分页插件-->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<!--全局搜索插件-->
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+<!--字数统计插件-->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+<!--代码段复制插件-->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<!--图片缩放插件-->>
+<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<!--分页插件-->
 
 </html>
