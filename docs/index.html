@@ -8,7 +8,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- vue主题样式 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- 暗黑模式css -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css" />
 </head>
 
 <body>
@@ -57,7 +60,20 @@
             }
           }
         )
-      ]
+      ],
+      themeColor: "#42b983", // 暗黑模式主题色
+      darkMode: {     // 暗黑模式配置
+        dark: {
+          background: "#1c2022",
+          toggleBtnBg: "#34495e",
+          textColor: "#b4b4b4"
+        },
+        light: {
+          background: "white",
+          toggleBtnBg: "var(--theme-color)",
+          textColor: "var(--theme-color)"
+        }
+      }
     }
   </script>
 </body>
@@ -73,5 +89,6 @@
 <!--图片缩放插件-->>
 <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 <!--分页插件-->
-
+<script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+<!-- 暗黑模式插件 -->
 </html>
