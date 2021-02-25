@@ -10,8 +10,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <!-- vue主题样式 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <!-- 暗黑模式css -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css" />
+  <!-- 暗黑主题插件样式 -->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
+    title="docsify-darklight-theme"
+    type="text/css"
+/>
 </head>
 
 <body>
@@ -62,17 +67,10 @@
         )
       ],
       themeColor: "#42b983", // 暗黑模式主题色
-      darkMode: {     // 暗黑模式配置
-        dark: {
-          background: "#1c2022",
-          toggleBtnBg: "#34495e",
-          textColor: "#b4b4b4"
-        },
-        light: {
-          background: "white",
-          toggleBtnBg: "var(--theme-color)",
-          textColor: "var(--theme-color)"
-        }
+      progress: {  // 阅读进度条插件配置
+        position: "top",
+        color: "var(--theme-color,#42b983)",
+        height: "3px",
       }
     }
   </script>
@@ -89,6 +87,13 @@
 <!--图片缩放插件-->>
 <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 <!--分页插件-->
-<script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
-<!-- 暗黑模式插件 -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+<!-- 阅读进度条插件 -->
+<script
+    src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
+    type="text/javascript"
+>
+// 暗黑主题切换插件
+</script>
+
 </html>
