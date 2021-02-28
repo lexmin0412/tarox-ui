@@ -2,8 +2,8 @@ import Taro from '@tarojs/taro'
 import React, {
   useState,
 } from 'react'
-import {View, Image} from '@tarojs/components'
-import { ImageProps } from "@tarojs/components/types/Image";
+import {Image} from '@tarojs/components'
+import {ImageProps} from "@tarojs/components/types/Image";
 import classnames from 'classnames'
 
 import {CommonProps} from "../types/common";
@@ -40,7 +40,7 @@ export const XImage: React.FC<IProps> = ({
 
   const handleError = (event: CommonEvent) => {
     console.log('handleError', event)
-    setImgUrl(errImg ||'https://img20.360buyimg.com/ling/jfs/t1/20876/36/12835/3043/5c9c2929Ed18cfb11/15b1c03ec830ab8e.png')
+    setImgUrl(errImg || 'https://img20.360buyimg.com/ling/jfs/t1/20876/36/12835/3043/5c9c2929Ed18cfb11/15b1c03ec830ab8e.png')
   }
 
   // 剩余属性
@@ -64,12 +64,11 @@ export const XImage: React.FC<IProps> = ({
   }
 
   return (
-    <View className={componentClassNames}>
-      <Image src={imgUrl}
-        onError={handleError}
-        {...restProps}
-        onClick={handleClick}
-      />
-    </View>
+    <Image src={imgUrl}
+      onError={handleError}
+      {...restProps}
+      onClick={handleClick}
+      className={componentClassNames}
+    />
   )
 }
