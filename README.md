@@ -11,7 +11,7 @@
 
 ## 文档
 
-* [vercel站点](taro-xui.lexmin0412.vercel.app)
+* [vercel站点](https://taro-xui.lexmin0412.vercel.app)
 * [github pages](https://lexmin0412.github.io/taro-xui)
 
 ### 预览
