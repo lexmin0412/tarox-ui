@@ -12,6 +12,8 @@ import React, {
   useState
 } from "react";
 import { XButton, XCheckbox } from 'taro-x-ui'
+
+import {pxTransform} from './../../utils/taroApi'
 import { handleViewDocs } from './../../utils/viewdocs'
 
 import logo from './../../assets/logo.png'
@@ -91,7 +93,7 @@ const XCheckboxIndex: React.FC = () => {
           checked={checked4}
           onChange={() => setChecked4(!checked4)}
           customStyle={{
-            fontSize: Taro.pxTransform(60)
+            fontSize: pxTransform(60)
           }}
         />
       </View>
@@ -116,7 +118,7 @@ const XCheckboxIndex: React.FC = () => {
           left: 0,
           bottom: 0,
           width: '100%',
-          height: Taro.pxTransform(90)
+          height: pxTransform(90)
         }}
         onClick={() => handleViewDocs('button')}
       >

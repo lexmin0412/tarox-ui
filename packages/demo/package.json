@@ -32,7 +32,7 @@
 		"dev:qq": "npm run build:qq -- --watch",
 		"dev:jd": "npm run build:jd -- --watch",
 		"dev:quickapp": "npm run build:quickapp -- --watch",
-    "new": "plop --plopfile generators/index.js"
+		"new": "plop --plopfile generators/index.js"
 	},
 	"browserslist": [
 		"last 3 versions",
@@ -51,6 +51,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.0",
+		"@tarojs/cli": "^3.1.0",
 		"@tarojs/mini-runner": "3.0.22",
 		"@tarojs/webpack-runner": "3.0.22",
 		"@types/react": "^16.0.0",

@@ -57,13 +57,6 @@
   color: #999;
 }
 
-page {
-  background-color: #eff0f5;
-  font-size: 28rpx;
-  color: #333;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
-}
-
 .flex {
   display: flex;
 }
@@ -92,4 +85,15 @@ $mtPrefix: margin-top;
   &-xs {
     margin-top: 10px;
   }
+}
+
+page, body {
+  background-color: #eff0f5;
+  font-size: 28px;
+  color: #333;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+.x-item-text {
+  font-size: 32px;
 }

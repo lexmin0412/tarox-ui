@@ -1,4 +1,4 @@
-import path from 'path'
+const path = require('path')
 
 const config = {
   projectName: 'taro-x-ui',
@@ -63,7 +63,8 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
       }
-    }
+    },
+    esnextModules: ['taro-x-ui']
   }
 }
 

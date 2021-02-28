@@ -10,6 +10,8 @@ import Taro, {
   useRouter,
 } from "@tarojs/taro";
 import {XButton, XModal} from 'taro-x-ui'
+
+import {pxTransform} from './../../utils/taroApi'
 import {handleViewDocs} from './../../utils/viewdocs'
 import "./index.scss";
 import logo from './../../assets/logo.png'
@@ -235,7 +237,7 @@ const ModalIndex: React.FC = (props) => {
           left: 0,
           bottom: 0,
           width: '100%',
-          height: Taro.pxTransform(90)
+          height: pxTransform(90)
         }}
         onClick={() => handleViewDocs('modal')}
       >

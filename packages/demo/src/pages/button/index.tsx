@@ -6,6 +6,7 @@ import Taro, {
 } from '@tarojs/taro'
 import {View } from "@tarojs/components";
 import {XButton} from 'taro-x-ui';
+import {pxTransform} from './../../utils/taroApi'
 import {handleViewDocs} from './../../utils/viewdocs'
 import './index.scss'
 import logo from './../../assets/logo.png'
@@ -164,7 +165,7 @@ const ButtonIndex: React.FC = () => {
           left: 0,
           bottom: 0,
           width: '100%',
-          height: Taro.pxTransform(90)
+          height: pxTransform(90)
         }}
         onClick={() => handleViewDocs('button')}
       >
