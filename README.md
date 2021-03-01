@@ -7,12 +7,24 @@
 ## 多端支持度
 
 * [x] 微信小程序
-* [ ] h5
+* [x] h5
 
-## 文档
+## 开发进度
 
-* [vercel站点](https://taro-xui.lexmin0412.vercel.app)
-* [github pages](https://lexmin0412.github.io/taro-xui)
+### 组件列表
+
+* [x] button
+* [x] checkbox
+* [x] image
+* [x] loadMore
+* [x] modal
+
+### 文档示例
+
+* [x] [文档](https://lexmin0412.github.io/taro-xui)v
+* [x] [vercel](https://taro-xui.lexmin0412.vercel.app)
+* [x] 小程序示例
+* [ ] h5示例
 
 ### 预览
 
