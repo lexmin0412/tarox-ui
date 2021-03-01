@@ -69,6 +69,10 @@ const Index: React.FC = (props) => {
       name: "复选框",
       path: "/pages/checkbox/index"
     },
+    {
+      name: "加载更多",
+      path: "/pages/loadMore/index"
+    },
   ];
 
   return (

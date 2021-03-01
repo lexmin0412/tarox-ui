@@ -5,6 +5,7 @@ export default {
     "pages/modal/index",
     "pages/image/index",
     "pages/checkbox/index",
+    "pages/loadMore/index",
     "pages/about/index",
   ],
   tabBar: {
