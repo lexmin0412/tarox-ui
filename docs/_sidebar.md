@@ -7,3 +7,5 @@
   - [Button](/button.md)
   - [Modal](/modal.md)
   - [Image](/image.md)
+  - [Checkbox](/checkbox.md)
+  - [LoadMore](/loadMore.md)
