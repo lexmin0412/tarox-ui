@@ -48,7 +48,7 @@ const config = {
     }
   },
   h5: {
-    publicPath: '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/taro-xui-h5-sample/' : '/',
     staticDirectory: 'static',
     postcss: {
       autoprefixer: {
