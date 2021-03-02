@@ -32,15 +32,27 @@ jobs:
       - name: 部署h5示例应用
         run: |
           cd packages/demo
+          echo 'npm install'
           npm install
+          echo 'npm run build:h5'
           npm run build:h5
+          echo '构建完成✅'
           cd dist
+          echo 'git init'
           git init
+          echo 'git config --global user.name'
           git config --global user.name ${{ secrets.USER_NAME }}
+          echo 'git config --global user.email'
           git config --global user.email ${{ secrets.USER_EMAIL }}
+          echo 'git config --global init.defaultBranch'
+          git config --global init.defaultBranch main
+          echo 'git remote set-url'
           git remote set-url origin https://lexmin0412:${{ secrets.USER_PWD }}@github.com/lexmin0412/taro-xui-h5-sample.git
+          echo 'git add .'
           git add .
+          echo 'git commit -m'
           git commit -m 'deploy'
+          echo 'git push -f'
           git push -f origin HEAD:main
       - name: 发送企业微信推送消息
         run: |
