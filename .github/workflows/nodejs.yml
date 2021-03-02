@@ -47,7 +47,7 @@ jobs:
           echo 'git config --global user.email'
           git config --global user.email ${{ secrets.USER_EMAIL }}
           echo 'git remote set-url'
-          git remote set-url origin https://lexmin0412:${{ secrets.USER_PWD }}@github.com/lexmin0412/taro-xui-h5-sample.git
+          git remote add origin https://lexmin0412:${{ secrets.USER_PWD }}@github.com/lexmin0412/taro-xui-h5-sample.git
           echo 'git add .'
           git add .
           echo 'git commit -m'
