@@ -46,4 +46,6 @@ export default XCheckboxIndex
 
 ## 扫码查看示例
 
-![示例图片](./_media/qrcode_pages_home_index.png)
+| 小程序                                          | h5                                          |
+|-------------------------------------------------|---------------------------------------------|
+| ![小程序](./_media/qrcode_pages_home_index.png) | ![h5](./_media/qrcode_demo_h5_loadMore.png) |

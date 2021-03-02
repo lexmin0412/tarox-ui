@@ -2,7 +2,7 @@
 
 模态框组件。
 
-### 用法
+## 用法
 
 在页面中引入组件
 
@@ -36,7 +36,7 @@ export default ModalIndex
 @import '~taro-x-ui/dist/style/components/modal.scss';
 ```
 
-### 参数
+## 参数
 
 | 属性  | 说明     | 可选值   | 是否必传 | 默认值 |
 |-------|----------|--------|----------|--------|
@@ -52,6 +52,8 @@ export default ModalIndex
 | cancelText | 取消按钮文字 | string | 否 | '取消' |
 | confirmText | 确认按钮文字 | string | 否 | '确认' |
 
-### 扫码查看示例
+## 扫码查看示例
 
-![示例图片](./_media/qrcode_pages_home_index.png)
+| 小程序                                          | h5                                          |
+|-------------------------------------------------|---------------------------------------------|
+| ![小程序](./_media/qrcode_pages_modal_index.png) | ![h5](./_media/qrcode_demo_h5_modal.png) |

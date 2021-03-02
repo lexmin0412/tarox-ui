@@ -1,0 +1,16 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "一个基于 Taro3 + React 的多端组件库。",
+  "main": "index.js",
+  "scripts": {
+    "img": "node scripts/createImage.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "lexmin0412 <zhangle_web@163.com>",
+  "license": "ISC",
+  "dependencies": {
+    "qr-image": "^3.2.0"
+  }
+}

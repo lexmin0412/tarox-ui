@@ -39,6 +39,8 @@ export default ImageIndex
 | customColor | 自定义颜色 | string | 否 | 无 |
 
 
-### 扫码查看示例
+## 扫码查看示例
 
-![示例图片](./_media/qrcode_pages_button_index.png)
+| 小程序                                          | h5                                          |
+|-------------------------------------------------|---------------------------------------------|
+| ![小程序](./_media/qrcode_pages_button_index.png) | ![h5](./_media/qrcode_demo_h5_button.png) |
