@@ -41,7 +41,7 @@ jobs:
           git remote set-url origin https://lexmin0412:${{ secrets.USER_PWD }}@github.com/lexmin0412/taro-xui-h5-sample.git
           git add .
           git commit -m 'deploy'
-          git push -f origin HEAD:master
+          git push -f origin HEAD:main
       - name: 发送企业微信推送消息
         run: |
           node qywxrobot.js key=${{secrets.QYWX_ROBOT_KEY}}
