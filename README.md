@@ -19,18 +19,20 @@
 * [x] loadMore
 * [x] modal
 
-### 文档示例
+### 文档及示例
 
-* [x] [文档](https://lexmin0412.github.io/taro-xui)v
+* [x] [文档](https://lexmin0412.github.io/taro-xui)
 * [x] [vercel](https://taro-xui.lexmin0412.vercel.app)
 * [x] 小程序示例
-* [ ] h5示例
+* [x] [h5示例](https://lexmin0412.github.io/taro-xui-h5-sample)
 
-### 预览
+## 查看示例
 
-<img src="qrcode.png" alt="Taro X UI" width="200" height="200"  />
+| 小程序                                          | h5                                      |
+|-------------------------------------------------|-----------------------------------------|
+| ![小程序](qrcode.png) | ![h5](qrcode_h5.png) |
 
-### 技术栈
+## 技术栈
 
 | 库      | 说明     |
 |---------|----------|
