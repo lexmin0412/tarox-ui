@@ -73,6 +73,10 @@ const Index: React.FC = (props) => {
       name: "加载更多",
       path: "/pages/loadMore/index"
     },
+    {
+      name: "缺省",
+      path: "/pages/default/index"
+    },
   ];
 
   return (

@@ -6,6 +6,7 @@ export default {
     "pages/image/index",
     "pages/checkbox/index",
     "pages/loadMore/index",
+    "pages/default/index",
     "pages/about/index",
   ],
   tabBar: {
