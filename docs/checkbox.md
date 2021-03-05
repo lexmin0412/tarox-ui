@@ -1,4 +1,4 @@
-# Image
+# Checkbox
 
 复选框组件。
 
