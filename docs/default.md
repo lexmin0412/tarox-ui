@@ -31,7 +31,7 @@ export default XDefaultIndex
 @import '~taro-x-ui/dist/style/components/default.scss';
 ```
 
-## 参数
+## 属性
 
 | 属性         | 说明       | 类型             | 是否必传 | 默认值      |
 |--------------|------------|------------------|----------|-------------|

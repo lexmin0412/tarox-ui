@@ -36,7 +36,7 @@ export default XCheckboxIndex
 @import '~taro-x-ui/dist/style/components/loadMore.scss';
 ```
 
-## 参数
+## 属性
 
 | 属性        | 说明             | 类型    | 是否必传 | 默认值  |
 |-------------|------------------|---------|----------|---------|

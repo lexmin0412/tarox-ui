@@ -36,7 +36,7 @@ export default ModalIndex
 @import '~taro-x-ui/dist/style/components/modal.scss';
 ```
 
-## 参数
+## 属性
 
 | 属性  | 说明     | 可选值   | 是否必传 | 默认值 |
 |-------|----------|--------|----------|--------|
