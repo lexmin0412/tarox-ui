@@ -1,0 +1,26 @@
+@import './../../style/variables/default.scss';
+
+$prefixCls: x-default;
+
+.#{$prefixCls} {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .#{$prefixCls}-icon {
+    width: 20%;
+    height: auto;
+    display: flex;
+  }
+  &-text {
+    margin-top: 12px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 28px;
+    color: #999;
+  }
+}
