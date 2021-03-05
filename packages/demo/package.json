@@ -47,7 +47,7 @@
 		"@tarojs/taro": "3.0.22",
 		"react": "^16.10.0",
 		"react-dom": "^16.10.0",
-		"taro-x-ui": "^0.0.1"
+		"taro-x-ui": "^0.0.2"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.0",
