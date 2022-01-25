@@ -1,8 +1,8 @@
 {
-  "name": "taro-x-ui",
+  "name": "@tarox/ui",
   "version": "1.0.0",
   "private": true,
-  "description": "taro-x-ui",
+  "description": "tarox-ui",
   "author": "lexmin0412 zhangle_media@hotmail.com",
   "repository": {
     "type": "git",
