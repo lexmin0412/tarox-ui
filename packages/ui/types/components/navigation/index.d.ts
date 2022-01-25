@@ -1,4 +1,4 @@
-/// <reference types="react" />
+import React from 'react';
 declare type NavigationHeaderProps = {
     title?: string;
     /**
@@ -22,5 +22,5 @@ declare type NavigationHeaderProps = {
      */
     onHomeClick?: () => void;
 };
-export declare const XNavigation: (props: NavigationHeaderProps) => JSX.Element;
+export declare const XNavigation: React.FC<NavigationHeaderProps>;
 export default XNavigation;
