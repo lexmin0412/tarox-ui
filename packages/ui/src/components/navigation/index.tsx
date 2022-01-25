@@ -31,9 +31,7 @@ type NavigationHeaderProps = {
   onHomeClick?: () => void
 }
 
-export const XNavigation = (
-	props: NavigationHeaderProps
-): JSX.Element => {
+export const XNavigation: React.FC<NavigationHeaderProps> = (props): JSX.Element => {
 	const {
     title = '页面标题',
     controlled = false,
