@@ -77,6 +77,10 @@ const Index: React.FC = (props) => {
       name: "缺省",
       path: "/pages/default/index"
     },
+    {
+      name: "导航",
+      path: "/pages/navigation/index"
+    },
   ];
 
   return (
