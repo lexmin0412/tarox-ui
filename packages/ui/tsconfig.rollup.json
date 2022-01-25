@@ -5,7 +5,12 @@
     "module": "ES6",
     "downlevelIteration": true,
     "baseUrl": ".",
-    "types": ["node"]
+    "types": ["node"],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": ["src/**/*"]
 }
