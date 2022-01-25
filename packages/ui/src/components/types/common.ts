@@ -1,3 +1,5 @@
+import React from 'react'
+
 export interface CommonProps {
   /**
    * 样式类名
