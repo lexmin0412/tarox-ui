@@ -6,7 +6,7 @@ import {COMPONENTS_TYPE} from './../types/index'
  */
 export const handleViewDocs = (docType: COMPONENTS_TYPE) => {
   const docSuffix = docType === 'all' ? '/' : `/${docType}`
-  const url = `https://taro-xui.vercel.app/#${docSuffix}`
+  const url = `https://tarox-ui.vercel.app/#${docSuffix}`
   if (process.env.TARO_ENV === 'h5') {
     window.open(url)
   } else {

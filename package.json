@@ -6,7 +6,7 @@
   "author": "lexmin0412 zhangle_media@hotmail.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lexmin0412/taro-xui.git"
+    "url": "https://github.com/lexmin0412/tarox-ui.git"
   },
   "workspaces": {
     "packages": [

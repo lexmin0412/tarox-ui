@@ -15,9 +15,9 @@ var resData = {
   "msgtype": "markdown",
   "markdown": {
     "content": `**taro-x-ui** 文档部署成功
-> 点此查看：[https://taro-xui.lexmin0412.vercel.app](https://taro-xui.lexmin0412.vercel.app)
-> 本次构建地址：[https://github.com/lexmin0412/taro-xui/actions/](https://github.com/lexmin0412/taro-xui/actions/)
-> 项目地址：[https://github.com/lexmin0412/taro-xui](https://github.com/lexmin0412/taro-xui)
+> 点此查看：[https://tarox-ui.lexmin0412.vercel.app](https://tarox-ui.lexmin0412.vercel.app)
+> 本次构建地址：[https://github.com/lexmin0412/tarox-ui/actions/](https://github.com/lexmin0412/tarox-ui/actions/)
+> 项目地址：[https://github.com/lexmin0412/tarox-ui](https://github.com/lexmin0412/tarox-ui)
             `,
     "mentioned_mobile_list": [ "@all" ]
   }

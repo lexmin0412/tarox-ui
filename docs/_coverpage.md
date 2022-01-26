@@ -8,5 +8,5 @@
 - 无需生成 html 文件
 - 众多主题 -->
 
-<a href="https://github.com/lexmin0412/taro-xui">Github</a>
+<a href="https://github.com/lexmin0412/tarox-ui">Github</a>
 <a href="#guide">Get Started</a>

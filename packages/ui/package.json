@@ -8,10 +8,10 @@
   "module": "dist/index.esm.js",
   "main": "dist/index.js",
   "source": "src/index.ts",
-  "homepage": "https://github.com/lexmin0412/taro-xui",
+  "homepage": "https://github.com/lexmin0412/tarox-ui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lexmin0412/taro-xui.git"
+    "url": "https://github.com/lexmin0412/tarox-ui.git"
   },
   "files": [
     "lib",

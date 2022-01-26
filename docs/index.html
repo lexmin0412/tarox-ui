@@ -21,10 +21,10 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
   <script>
     window.$docsify = {
-      basePath: window.location.host === 'lexmin0412.github.io' ? '/taro-xui/' : '/',
+      basePath: window.location.host === 'lexmin0412.github.io' ? '/tarox-ui/' : '/',
       name: 'Taro X UI', // 文档标题，会显示在侧边栏顶部
       nameLink: '/', // 点击文档标题后的跳转地址
-      repo: 'lexmin0412/taro-xui', // 有repo属性则右上角会展示github图标，点击可进入
+      repo: 'lexmin0412/tarox-ui', // 有repo属性则右上角会展示github图标，点击可进入
       loadSidebar: true, // 加载侧边栏
       externalLinkTarget: '_blank', // 外部链接的打开方式，默认_blank
       cornerExternalLinkTarget: '_blank', // 右上角链接的打开方式。默认为 _blank
@@ -51,7 +51,7 @@
       },
       plugins: [
         EditOnGithubPlugin.create(
-          'https://github.com/lexmin0412/taro-xui/blob/master/docs/',
+          'https://github.com/lexmin0412/tarox-ui/blob/master/docs/',
           null,
           function ( file ) {
             if ( file.indexOf( 'en' ) === -1 ) {

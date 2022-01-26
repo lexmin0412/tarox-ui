@@ -49,7 +49,7 @@ const config = {
     }
   },
   h5: {
-    publicPath: process.env.NODE_ENV === 'production' ? '/taro-xui-h5-sample/' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/tarox-ui-h5-sample/' : '/',
     staticDirectory: 'static',
     postcss: {
       autoprefixer: {

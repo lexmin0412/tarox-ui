@@ -21,10 +21,10 @@
 
 ### 文档及示例
 
-* [x] [文档](https://lexmin0412.github.io/taro-xui)
-* [x] [vercel](https://taro-xui.lexmin0412.vercel.app)
+* [x] [文档](https://lexmin0412.github.io/tarox-ui)
+* [x] [vercel](https://tarox-ui.lexmin0412.vercel.app)
 * [x] 小程序示例
-* [x] [h5示例](https://lexmin0412.github.io/taro-xui-h5-sample)
+* [x] [h5示例](https://lexmin0412.github.io/tarox-ui-h5-sample)
 
 ## 查看示例
 

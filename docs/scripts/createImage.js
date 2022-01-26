@@ -5,7 +5,7 @@ const qrcodeType = args[ 2 ]
 const compName = args[ 3 ]
 
 let previewUrl = ''
-const h5Base = 'https://lexmin0412.github.io/taro-xui-h5-sample/#'
+const h5Base = 'https://lexmin0412.github.io/tarox-ui-h5-sample/#'
 let imgName = ''
 
 /**
