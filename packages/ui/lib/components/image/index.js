@@ -1,6 +1,6 @@
 import Taro from '@tarojs/taro';
 import React, { useState, } from 'react';
-import { View, Image } from '@tarojs/components';
+import { Image } from '@tarojs/components';
 import classnames from 'classnames';
 export const XImage = ({ src, errImg, className, mode = 'aspectFit', previewUrls, onClick }) => {
     const prefixCls = 'x-image';
@@ -29,7 +29,6 @@ export const XImage = ({ src, errImg, className, mode = 'aspectFit', previewUrls
         }
         onClick && onClick(event);
     };
-    return (React.createElement(View, { className: componentClassNames },
-        React.createElement(Image, Object.assign({ src: imgUrl, onError: handleError }, restProps, { onClick: handleClick }))));
+    return (React.createElement(Image, Object.assign({ src: imgUrl, onError: handleError }, restProps, { onClick: handleClick, className: componentClassNames })));
 };
 //# sourceMappingURL=index.js.map
