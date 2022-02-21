@@ -2,26 +2,26 @@
  * @Author: cellerchan
  * @Date: 2019-06-13 19:04:49
  * @Last Modified by: cellerchan
- * @Last Modified time: 2019-09-18 20:50:27
+ * @Last Modified time: 2022-02-21 14:14:45
  */
 
-import Taro, { Component } from "@tarojs/taro";
-import { Image } from "@tarojs/components";
+import Taro, { Component } from '@tarojs/taro'
+import { Image } from '@tarojs/components'
 
 const config = {
-  host: {
-    url: 'https://ceshiapi.58wld.com'
-  }
+	host: {
+		url: '',
+	},
 }
 
 /**
  * 组件需要的Props定义
  */
 interface IProps {
-	src: string;
-	type: string;
-	key: string;
-	className?: string;
+	src: string
+	type: string
+	key: string
+	className?: string
 }
 /**
  * 分割线
@@ -36,32 +36,31 @@ interface IProps {
  */
 
 const iconEnum = {
-	'store': `${config.host.url}/images/common/headimg.jpg`,
-	'person': `${config.host.url}/images/common/person_zhanweitu@2x.png`,
-	'goods': `${config.host.url}/images/common/icon_default.png`,
+	store: `${config.host.url}/images/common/headimg.jpg`,
+	person: `${config.host.url}/images/common/person_zhanweitu@2x.png`,
+	goods: `${config.host.url}/images/common/icon_default.png`,
 }
 
 export default class BackTop extends Component<IProps> {
-
-	state = {};
+	state = {}
 
 	// 错误事件监听 设置唯一state
 	handleError = key => {
-		const { type } = this.props;
+		const { type } = this.props
 		this.setState({
-			[`imgError${key}`]: iconEnum[type]
+			[`imgError${key}`]: iconEnum[type],
 		})
 	}
 
 	render() {
-		const { src, key } = this.props;
+		const { src, key } = this.props
 		return (
 			<Image
-				{...this.props}
+				key={key}
 				mode='aspectFill'
 				src={this.state[`imgError${key}`] || src}
 				onError={this.handleError.bind(this, key)}
 			/>
-		);
+		)
 	}
 }
